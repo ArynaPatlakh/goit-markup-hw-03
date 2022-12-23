@@ -36,8 +36,6 @@ body {
 
 .header {
   background-color: var(--secondary-text-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 ul,
@@ -45,6 +43,10 @@ ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 .visually-hidden {
@@ -94,17 +96,13 @@ ol {
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .navigation {
   display: flex;
   gap: 40px;
-}
-.contact {
-  display: flex;
-  margin-left: auto;
   align-items: center;
-  gap: 40px;
 }
 
 .nav-link {
@@ -113,6 +111,10 @@ ol {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 
 .link-nav:hover,
@@ -122,6 +124,13 @@ ol {
 
 .link-nav:active {
   color: var(--accent-color);
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 40px;
 }
 
 .link-contact {
@@ -139,10 +148,6 @@ ol {
 /* Footer */
 .footer {
   background-color: var(--title-text-color);
-
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 156px;
 }
 
 .footer > .logo {
@@ -164,6 +169,7 @@ ol {
   background-color: var(--title-text-color);
   padding-top: 192px;
   padding-bottom: 192px;
+  text-align: center;
 }
 
 .hero-title {
@@ -183,8 +189,6 @@ ol {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
 
-  display: block;
-  margin: 0 auto;
   border: 1px solid transparent;
   cursor: pointer;
 
@@ -218,6 +222,9 @@ ol {
   gap: 24px;
 }
 
+.about-item {
+  width: calc((100% - 72px) / 4);
+}
 .about-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -330,21 +337,18 @@ ol {
   color: var(--accent-color);
   background-color: var(--exception-color);
 
-  border: none;
   cursor: pointer;
   text-align: center;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
 
   font-family: Roboto, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
 
-  align-items: flex-start;
   padding: 12px 24px;
-  gap: 24px;
 }
 
 .filter-button:hover,
@@ -363,8 +367,13 @@ ol {
   column-gap: 24px;
 }
 
-.card-img {
-  margin-bottom: 32px;
+.card-div {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-left: 0.5px solid #f4f4fd;
+  border-right: 0.5px solid #f4f4fd;
+  border-bottom: 0.5px solid #f4f4fd;
 }
 .card-title {
   color: var(--title-text-color);
@@ -373,7 +382,6 @@ ol {
   font-size: 20px;
   line-height: 1.2;
 
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 
@@ -382,9 +390,6 @@ ol {
 
   font-size: 16px;
   line-height: 1.5;
-
-  padding-left: 16px;
-  padding-bottom: 32px;
 }
 
 .card-link {
